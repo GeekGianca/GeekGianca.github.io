@@ -10,15 +10,15 @@
 
     <title>Geek Programmer</title>
     <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../../../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="../css/blog-post.css" rel="stylesheet">
+    <link href="../../../css/blog-post.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
           rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="../css/one-page-wonder.css" rel="stylesheet">
+    <link href="../../../css/one-page-wonder.css" rel="stylesheet">
 </head>
 
 <body>
@@ -37,13 +37,20 @@
                        aria-expanded="false" href="#">Lenguajes</a>
                     <div class="dropdown-menu">
                         <a href="#" class="dropdown-item">C#</a>
-                        <a href="../nav/java1.html" class="dropdown-item active">Java</a>
+                        <a href="../../../nav/java1.html" class="dropdown-item active">Java</a>
                         <a href="#" class="dropdown-item">VB.Net</a>
                         <a href="#" class="dropdown-item">Go</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Guias</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false" href="#">Guias</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Clase 1(No disp)</a>
+                        <a href="#" class="dropdown-item">Clase 2(No disp)</a>
+                        <a href="#" class="dropdown-item">Clase 3(No disp)</a>
+                        <a href="clase4.html" class="dropdown-item">Clase 4</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Frameworks</a>
@@ -61,7 +68,7 @@
         <!-- Post Content Column -->
         <div class="col-lg-8">
             <!-- Title -->
-            <h1 class="mt-4">Iniciando con Java</h1>
+            <h1 class="mt-4">Clase 4 23 Febrero 2019</h1>
             <!-- Author -->
             <p class="lead">
                 by
@@ -69,36 +76,66 @@
             </p>
             <hr>
             <!-- Date/Time -->
-            <p>Publicado Sabado 9 Febrero, 2019 a las 00:35 AM</p>
+            <p>Publicado Lunes 25 Febrero, 2019 a las 23:49 PM</p>
             <hr>
             <!-- Preview Image -->
-            <img class="img-fluid rounded" style="" src="https://blog.megacursos.com/wp-content/uploads/2018/08/Java-1-Introduction.png" alt="">
+            <img class="img-fluid rounded" style="" src="https://blog.newrelic.com/wp-content/uploads/good-programmer-banner-final.jpg" alt="">
             <hr>
             <!-- Post Content -->
-            <p class="lead">Saludos amigos, colegas y demas, con este primer post se inicia una serie de tutoriales que te haran dejar de sufrir por la programacion.</p>
+            <p class="lead">Saludos queridos amigos.</p>
 
-            <p>En muchas ocasiones nos sentimos presionados por el profesor porque se que la mayoria de personas que seguiran estos pason, son aprendicez e iniciantes.</p>
+            <p>Los ejercicios realizados en la clase, se explicaran de manera tal que se pueda comprender la facilidad del ejercicio.</p>
 
-            <p>Por este motivo me he puesto en sus zapatos y les enseñare la mejor forma de programar en java sin dolor, sin sufrimiento y sin quedar en la nada.</p>
+            <p>El ejercicio propuesto y realizado en clases, tiene como funcionalidad convertir un numero decimal a un numero romano, de tal manera que el usuario al pasar como dato un numero, este lo convierte a un numero romano instantaneamente.</p>
 
             <p>Empecemos...</p>
 
-            <p>Lo primordial antes que nada es tener todas las herramientas necesaria para usar el IDE <strong>Netbeans</strong>. Puedes usar otro de tu preferencia, lo importante es entender.</p>
-            <p>Enlaces de descarga.</p>
-            <p><a href="https://www.oracle.com/technetwork/es/java/javase/downloads/index.html" target="_blank">Java</a></p>
-            <p><a href="https://netbeans.org/downloads/8.0.2/" target="_blank">Netbeans</a></p>
-            <img class="img-fluid" src="../img/info.png">
-            <p><strong>Tener en cuenta la version de Java, recomiendo que si nunca has utilizado Netbeans y vas a aprender, descargues la version Java SE</strong></p>
-            <!--<blockquote class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in
-                    <cite title="Source Title">Source Title</cite>
+            <p>Puedes descargar el proyecto completo al final del blog.</p>
+            <blockquote class="blockquote">
+                <p class="mb-0">Decimal a Romano</p>
+                <footer class="blockquote-footer">Creamos un proyecto nuevo en java
+                    <cite title="Source Title">File..New Project...Java/Java Application</cite>
                 </footer>
-            </blockquote>-->
+            </blockquote>
+
+            <p>En este momento deberias tener una clase <strong>main</strong> vacia.</p>
+
+            <p>Procedemos a crea una nueva clase dentro del mismo paquete, el paquete es el que contiene la clase principal que se crea por defecto, asegurate de crearla allí mismo.</p>
+            <p>Ya creada tu clase que en nuestro caso la llamamo <strong>Romano</strong> empezaremos creando los vectores necesarios para la aplicacion de la conversion.</p>
+
+            <script src="https://gist.github.com/GeekGianca/4ed6c7b9b8bee9105e029759ba93946d.js"></script>
+
+            <p>El primer vector hace referencia a las unidades comunes de los numeros, en este caso del <strong>0-9</strong>, recordemos que los vectores almacenan posiciones y en cada posicion tiene un dato. Los demas vectores hacen referencia a los valores de decenas <strong>10-100</strong> Decenas, <strong>100-1000</strong> Centenas, <strong>1000-9999</strong> Unidades de mil.</p>
+
+            <p>El metodo <strong>convertirRomanos</strong>, que hace parte de la clase Romano.java, se le pasa un parametro de tipo entero, en este caso es el numero que se quiere convertir a romano,
+            primero se verifica si el numero pertenece a las decenas, centenas o unidades de mil, y dependiendo del condicional, este obtiene el valor del resultado.
+            Pero miremos mas alla de este simple metodo y veamos que hace en realidad que se obtenga el resultado deseado.</p>
+
+            <script src="https://gist.github.com/GeekGianca/a04bee1a0c5dc998e4f3f538159fed71.js"></script>
+            <p>El metodo convertir unidad unicamente, devuelve el valor de la posicion en la cual se encuentra el numero que se esta pasando, por ejemplo, si se envio el numero 4, entonces busca en el vector de unidad la posicion 4, en este caso 4-1=3 y devuelve el valor de esa posicion.</p>
+            <script src="https://gist.github.com/GeekGianca/88ad40ce17a75e9e54cf089ca5a126ae.js"></script>
+            <p>El metodo <strong>convertirDecena</strong>, primero obtiene el modulo del numero, por ejemplo si es 12, el modulo seria 2, luego se le resta ese modulo al numero para que al final de un numero exacto, en este ejemplo 10, 12-2=10. Luego de haber obtenido el segundo numero obtenemos entonces el primer numero de la posicion en el vector, como es 10 entonces la division de 10/10 = 1 y ese uno se le asigna al vector, y obtiene el valor de <strong>X</strong>, y el primer numero encontrado en el caso de la variable se llama <strong>segundo</strong>, se manda al vector de la unidad para que obtenga su valor, en este caso <strong>II</strong>, para asi concluir con el resultado de XII.</p>
+            <script src="https://gist.github.com/GeekGianca/6d89f2b037a2395969e20a48ec7e33b6.js"></script>
+            <p>El metodo <strong>convertirCentena</strong> realiza el mismo proceso anterior, solo que en este caso en vez de llamar a los vectores, simplemente se llama al vector de la centena luego de haber obtenido los valores del modulo y el primero numero, y se envia el resto del numero al metodo anterior.</p>
+            <p>De esta manera, obtenemos el modulo del numero entre 100, luego le restamos ese modulo para que de un numero exacto, ejemplo 125-25 = 100 y luego obtenemos el valor inicial (1)para este ejemplo, se obtiene del vector el valor de 1 y se envia el 25 al metodo de convertir decena.</p>
+            <script src="https://gist.github.com/GeekGianca/27de4d1436ad9b8215af97efc81f0d85.js"></script>
+            <p>El metodo final obtiene realiza el mismo proceso que los metodos anteriores, en este caso divide los valores por 1000 porque son unidades de mil.</p>
+            <script src="https://gist.github.com/GeekGianca/e2a32789f8047857e2922d1aa410f3ea.js"></script>
+            <p>Para incluir la interfaz grafica, diseña el contenido a tu gusto, dale los nombres necesarios a los botones y campos, y vamos al codigo.</p>
+            <img class="img-fluid" src="../../../img/2019-02-26.png">
+            <p>Al darle doble click al boton generas el evento y podras empezar a llamar tu clase e incluir tu codigo.</p>
+            <p>Antes que nada crea la instancia de la clase romano.</p>
+            <script src="https://gist.github.com/GeekGianca/e24fc27cbff885c163abbc28fc582b29.js"></script>
+            <p>Y ahora procederemos a empezar el codigo.</p>
+            <p>El nombre del metodo se crea por defecto, pero el contenido es lo importante.</p>
+            <p>Primero obtenemos el valor ingresado en el campo, verificamos si no esta vacio, en caso tal que este vacio, entonces se lanza un mensaje en pantalla diciendo que este esta vacio. De lo contrario, se hace una conversion a un int, y se enviar por parametro al metodo de <strong>convertirRomanos</strong>, como este devuelve una cadena, se asigna entonces al valor de la caja de texto que se creo, en mi caso puse un label con el nombre de salidaResultado, que utiliza el metodo format del String, este metodo obtiene un parametro por medio del cual tu le pones un comodin, y el reconoce el parametro que quieres pasarle.</p>
+            <script src="https://gist.github.com/GeekGianca/d566f305f61337e854640fb1c1d5efd1.js"></script>
+            <p>Descargate el codigo completo <a target="_blank" href="https://mega.nz/#!CoJRzaYA!jJK-1p7oBKZDpaUc__OopmCmJP_rFrd5O4mW3CrkGY0">Aqui!!!</a>, y cometame que te parecio.</p>
+            <p>Saludos...</p>
             <hr>
 
             <!-- Comments Form -->
-            <div class="card my-4">
+            <!--<div class="card my-4">
                 <h5 class="card-header">Dejame un comentario:</h5>
                 <div class="card-body">
                     <form>
@@ -108,7 +145,7 @@
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
                 </div>
-            </div>
+            </div>-->
 
             <!-- Single Comment -->
             <!--<div class="media mb-4">
@@ -223,8 +260,8 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="../vendor/jquery/jquery.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../../vendor/jquery/jquery.min.js"></script>
+<script src="../../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
